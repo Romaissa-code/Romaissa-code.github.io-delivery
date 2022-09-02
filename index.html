@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontEnd design </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/d293919c65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+        <nav>
+            <div class="logo">Easy<span class="logo-span">2</span>Go.com</div>
+
+            <div class="nav-bar">
+                <a href="#" class="toggle">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                 </a>
+                <ul class="nav-bar-link">
+                    
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#trackParcel">Track your parcel </a></li>
+                    <li><a href="#getQuote">Get a quote</a></li>
+                    <li><a href="#contactUs">Contact us</a></li>
+                    <li><a href="admin.html" >Admin's space</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <div class="main" id="homeContent">
+              
+            <div class="main-passage">
+             <p> The Best Parcel Delivery in Algeria </p> 
+                 <ul class="list">
+                     <li><i class="fa-solid fa-square-check"></i>Fast Delivery</li>
+                     <li><i class="fa-solid fa-square-check"></i>Real Time Tracking</li>
+                     <li > <i class="fa-solid fa-square-check"></i>Affordable Prices</li>
+                 </ul>
+                 <img class="road" src="images/no.jpg" alt="" width="250px"height="250px">
+                 <div class="btn">
+                     <a href="#getQuote" > Get a quote</a>
+                 </div>
+
+            </div>
+            <div class="resp">
+            <p> The Best Parcel Delivery in Algeria </p> 
+            
+            <ul class="list">
+                     <li><i class="fa-solid fa-square-check"></i>Fast Delivery</li>
+                     <li><i class="fa-solid fa-square-check"></i>Real Time Tracking</li>
+                     <li > <i class="fa-solid fa-square-check"></i>Affordable Prices</li>
+                 </ul>
+            <div class="btn res">
+                     <a href="#getQuote" > Get a quote</a>
+                 </div>
+            </div>
+
+            <div class="main-img">  
+                <img src="images/d2.png" alt="a man" width="650px" height="680px" >
+            </div> 
+        </div>
+        
+        
+       <section class="s" id="services">
+         <div class="service-t">
+                <h1 >Service</h1>
+         </div>
+
+         <div class="services">   
+
+            <div class="ser1">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <h2>Classic  delivery </h2>
+                <p> We get your parcels to their destination 
+                    in no time , with a reasonable  price </p>
+                <a class ="planning" href="planning.pdf">Check our planning schedule</a><br>
+              <div class="btn one"><a href="http://localhost/readmore/"  class="link">Read more</a></div>
+           </div>
+            <div class="ser3">
+                <i class="fa-solid fa-earth-africa"></i>
+                <h2>Real time tarcking</h2>
+                <p>Just insert your tracking number and find out the location of your parcel</p>
+                <br><br>
+                <div class="btn three"> <a href="https://www.shiprocket.in/blog/courier-parcel-package-tracking-system-working/" class="link"> Check how it works!</a>   </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="block" id="trackParcel">
+     
+        <div class="block-img">
+           
+            <img src="images/process.png" alt="" width="700px" >
+        </div>
+        <div class="t-inbtn">
+            <h2>Track your parcel <i class="fa-solid fa-location-dot"></i></h2>
+            <p>Insert your tracking number to locate your parcel any time</p> 
+
+            <form  method="post" action="index.php" class="inbtn">     
+                <input type="text" placeholder="xx-xx-xx" id="t-btn1" name="tracking" >
+                <input type="submit" id="t-btn2" name="send_track" value="submit">
+            </form>   
+
+        </div> 
+    </div>
+      
+
+
+    <div class="main2" id="getQuote">
+            <div class="forum">
+                <div class="f-title">
+                    <h2>Get a quote </h2>
+                </div>
+
+                <form action="index.php" method="post" class="main-form">
+                <div class="forum-div">
+                    <label >Full name</label><br>
+                    <input type="text" name="fullName" required><br>
+                </div>
+                <div class="forum-div">
+                    <label >Phone number</label><br>
+                    <input type="text" name="phoneNumber" required><br>
+                </div>
+                
+                <div class="forum-div">
+                    <label>Source address</label><br>
+                    <input class="adress"  type="text" placeholder="Source " name="source" required>
+                    
+                    
+                
+                </div>
+                <div class="forum-div">
+                    <label >Desstination address</label><br>
+                    <input class="adress" type="text"placeholder="Destination" name="destination" required>
+            
+                
+                </div>
+            
+                   <div class="forum-div">
+                      <label>Length</label> 
+                       <input type="text" placeholder="cm" name="length" required>
+                    </div>
+                    <div class="forum-div">
+                        <label>Height</labeel>
+                        <input type="text" placeholder="cm" name="height"required>
+                    </div>
+                    
+                    <div class="forum-div">
+                        <label>Weight</label>
+                        <input type="text" placeholder="kg" name="weight"required>
+                    </div>
+                    <div class="forum-div">
+                       <label>Email</label> 
+                        <input type="email" name="email" required>
+                    </div>
+                       
+                       <input type="submit" value="send" name="send_quote" class="btn2" >
+                       
+                       </form>
+                    
+                   
+                </div>
+                
+            </div>
+            
+        </div>
+       
+
+        <div class="c" id="contactUs">
+            <div class="contact">
+             <h2 class="conact-title">Contact us</h2>   
+            
+            
+            <form action="index.php" method="post" class="conact-form">
+                <p>If you have any questions fill free to send us an email</p>
+                <label>Email</label><br> 
+                <input type="email" placeholder="Email" name="mail" required><br> 
+                <label>Your message</label> <br>
+                <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+                <input   class="lastBtn" type="submit" name="send_contact" value="send">
+           </form>
+           <div class="contact-info">
+            <p>Boulevard de l'independance 35000 Boumerdes-Algerie</p>
+
+
+            <p>(+213) 0560 477 356 63</p>
+            <p>contact@Easy2Go.com</p>
+        </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="close">Easy2Go &copy:2022</div> 
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
